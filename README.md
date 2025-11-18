@@ -1,4 +1,4 @@
-# 💄 Makeup Rain ✨
+# Makeup Rain ✨
 
 <div align="center">
 

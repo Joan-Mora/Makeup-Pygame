@@ -43,7 +43,7 @@
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/Camilandia20/Makeup-Pygame.git
+   git clone https://github.com/Joan-Mora/Makeup-Pygame.git
    cd Makeup-Pygame
    ```
 
@@ -461,24 +461,33 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 
 ---
 
-## 👥 Autores
+## 👥 Autores y créditos
 
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/Joan-Mora.png" width="100px;" alt="Darwin Joan Aveiga Mora"/><br />
-      <sub><b>Darwin Joan Aveiga Mora</b></sub><br />
-      <a href="https://github.com/Joan-Mora">@Joan-Mora</a><br />
-      <sub>Desarrollador Full Stack</sub>
-    </td>
-    <td align="center">
 	  <img src="https://github.com/Camilandia20.png" width="100px;" alt="Maria Camila Alvarez Barreto"/><br />
       <sub><b>Lic. Maria Camila Alvarez Barreto</b></sub><br />
 	  <a href="https://github.com/Camilandia20">@Camilandia20</a><br />
-      <sub>Desarrollador Full Stack</sub>
+      <sub>Autora original: idea y versión 1</sub>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Joan-Mora.png" width="100px;" alt="Darwin Joan Aveiga Mora"/><br />
+      <sub><b>Darwin Joan Aveiga Mora</b></sub><br />
+      <a href="https://github.com/Joan-Mora">@Joan-Mora</a><br />
+      <sub>Refactorización y versión 2.0.0</sub>
     </td>
   </tr>
 </table>
+
+**Idea original y autoría:** Makeup Rain es un proyecto creado por **Maria Camila Alvarez** ([@Camilandia20](https://github.com/Camilandia20)). En junio de 2023 publicó la primera versión: el juego completo en un único `main.py` (menú con controles, lluvia de maquillaje y cactus, 3 vidas, 50 puntos por elemento, pausa con `P`, mejor puntaje y reintento con `R`), junto con los sprites (`player_ship.png`, `makeup.png`, `cactus.png`, `heart.png`) y la música (`music.mp3`).
+
+**Contribuciones de Darwin Aveiga** ([@Joan-Mora](https://github.com/Joan-Mora)), en la versión 2.0.0 (noviembre de 2025), sobre la base del juego original:
+
+- Reestructuró el código en el paquete modular `makeuprain/` (`core/`, `entities/`, `scenes/`, `ui/`, `utils/`) con configuración centralizada en `config.py` y un `main.py` reducido a punto de entrada.
+- Implementó el sistema de escenas (menú, juego y game over) y la gestión de partida con `GameManager` y `RoundManager`.
+- Agregó el modo cooperativo de 2 jugadores, el modo por rondas con dificultad creciente, combos con multiplicadores, partículas, textos flotantes, invulnerabilidad temporal, colisiones con máscaras y persistencia del récord en `highscore.json`.
+- Organizó los recursos en `assets/`, añadió `requirements.txt`, `.gitignore` y `LICENSE`, la documentación de `docs/` y reescribió este README.
 
 **Institución:** Corporación Universitaria Minuto de Dios  
 **Programa:** Tecnología en Desarrollo de Software  
